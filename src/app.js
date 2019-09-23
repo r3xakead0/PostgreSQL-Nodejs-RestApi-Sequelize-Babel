@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 app.use(json());
 
 // routes
-app.use('api/projects',projectRoutes);
-app.use('api/tasks',taskRoutes);
+app.use('/api/projects', projectRoutes);
+app.use('/api/tasks', taskRoutes);
 
 export default app;
